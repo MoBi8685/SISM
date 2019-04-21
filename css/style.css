@@ -25,7 +25,7 @@ audio:not([controls]) {
 
 html {
   background: #fff;
-  color: #000;
+  color: rgb(175, 175, 175);
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -119,9 +119,9 @@ sup {
 
 sub {
   bottom: -0.25em; }
-
+/* 
 img {
-  border: 0; }
+  border: 0; } */
 
 svg:not(:root) {
   overflow: hidden; }
@@ -150,7 +150,9 @@ textarea {
 
 button,
 input {
-  line-height: normal; }
+  line-height: normal;
+  color: white;
+}
 
 button,
 select {
@@ -199,10 +201,10 @@ table {
  * Global Styles
  */
 body {
-  color: #927e7e;
+  color: #494949;
   font-family: "Montserrat", "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 500;
   line-height: 1.6; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -219,7 +221,7 @@ ul, ol {
 
 a {
   text-decoration: none;
-  color:#37393b; }
+  color:white; }
 
 address {
   font-style: normal; }
@@ -244,7 +246,7 @@ form textarea {
  * Reusable Components Style
  */
 .button, form input[type="submit"], form button, form input[type="reset"] {
-  background:#37393b;
+  background:#000;
   color: white;
   padding: 10px;
   display: inline-block; }
@@ -262,7 +264,7 @@ form textarea {
   height: 70px;
   border-radius: 50%;
   display: inline-block;
-  background:#37393b;
+  background:#000;
   text-align: center;
   padding-top: 20px;
   position: absolute;
@@ -286,7 +288,7 @@ form textarea {
     display: block;
     width: 100%; }
   .team figcaption {
-    background:#37393b;
+    background:#000;
     color: white;
     padding: 10px 20px;
     text-align: center; }
@@ -303,7 +305,7 @@ form textarea {
   .team small {
     font-size: 14px;
     font-size: 0.875em;
-    color: #37393b; }
+    color: #000; }
 
 .testimonial-slider .slides {
   list-style: none;
@@ -358,13 +360,13 @@ form textarea {
       width: 20px;
       height: 20px;
       border: 3px solid #ede6e6;
-      box-shadow: 0 0 0 2px#37393b;
+      box-shadow: 0 0 0 2px#000;
       border-radius: 50%;
       display: block;
       overflow: hidden;
       text-indent: -9999px; }
       .testimonial-slider .flex-control-nav li a.flex-active {
-        background-color:#37393b; }
+        background-color:#000; }
 
 .client-grid {
   *zoom: 1; }
@@ -431,7 +433,7 @@ form textarea {
   text-align: right; }
 .contact-form input[type="submit"] {
   padding: 10px 20px;
-  background-color: #37393b;
+  background-color: #000;
   color: white;
   border: none;
   font-size: 20px;
@@ -1367,7 +1369,7 @@ form textarea {
         width: 100%;
         left: 0;
         height: 2px;
-        background:#37393b;
+        background:#000;
         position: absolute;
         opacity: 0;
         -webkit-transition: .3s ease;
@@ -1385,7 +1387,7 @@ form textarea {
 
 .mobile-navigation {
   clear: both;
-  background:#37393b;
+  background:#000;
   display: none;
   margin-bottom: 20px; }
   @media screen and (min-width: 991px) {
@@ -1404,7 +1406,7 @@ form textarea {
     display: block; }
 
 .page-head {
-  background:#37393b;
+  background:#000;
   color: white;
   text-align: center;
   padding: 50px 0;
@@ -1416,7 +1418,7 @@ form textarea {
     margin: 0; }
 
 .hero {
-  background:#37393b;
+  background:#000;
   text-align: center;
   padding-top: 150px; }
   .hero img {
@@ -1451,7 +1453,7 @@ form textarea {
     .cta {
       text-align: center; } }
   .cta span {
-    color:#37393b;
+    color:#000;
     font-weight: 700; }
   .cta h2 {
     margin: 0;
@@ -1473,7 +1475,7 @@ form textarea {
     margin-top: 30px; } }
 
 .contact-area {
-  background-color:#37393b;
+  background-color:#000;
   color: white; }
   .contact-area address {
     font-size: 30px;
@@ -1582,31 +1584,137 @@ li a{
 #app{
   display: flex;
   flex-flow: row wrap;
+  margin-top: 35px;
 }
 .school{
   display: block;
   width: 30%;
   height: auto;
   border-radius: 25px;
-  background: white;
+  background: rgb(11, 126, 165);
   margin: 35px 10px;
   padding: 10px;
-  color: #333;
+  color: white;
+  border: white solid;
   flex-grow: 4;
 }
-.school:hover::after{
-  content: 'عرض المزيد';
+.More{
   background: #333;
   color: white;
   border-radius: 25px;
-  margin: 10px;
   padding: 10px;
-  cursor: pointer;
+}
+.More:hover{
+  background: white;
+  color: #333;
+  transition: 0.5s;
 }
 #search-bar{
   margin-top: 50px;
   width: 90%;
   padding: 10px;
   border-radius: 25px;
+  border: rgb(11, 126, 165) solid;
+}
+#logo{
+  border: 1px solid rgb(11, 126, 165);
+}
+.Aschool{
+  background: white;
+  border-radius: 25px;
+  margin: 10px;
+  color: #333;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.Aschool h3{
+  width: 100%
+}
+.scl-cntnt{
+  display: block;
+  width: 10%;
+  height: auto;
+  border: white solid;
+  flex-grow: 2;
+}
+.user{
+  margin: 10px;
+  display: block;
+  width: 30%;
+  height: auto;
+  border: white solid;
+  border-radius: 25px;
+  flex-grow: 2;
+  padding: 10px;
+}
+.user input{
+  margin: 10px;
+  padding: 5px;
+  border-radius: 25px;
+  border: rgb(11, 126, 165) solid;
+  width: 90%;
+  color: black;
+}
+#app h3{
+  width: 100%;
+}
 
+.teacher-div {
+  display: block;
+  width: 100%;
+}
+
+.teacher-name {
+  color: red;
+}
+
+table {
+  display: block;
+}
+
+#div-master {
+  width: 75%;
+  display: block;
+  padding: 5px;
+}
+#div-master tr{
+  width: 100%;
+}
+#div-master th{
+  color: rgb(190, 189, 189);
+  width: 50%;
+  font-size: 20px;
+  border-bottom: rgb(190, 189, 189) solid;
+}
+#div-master td{
+  border-bottom: white solid;
+  height: 20px;
+  padding: 2px;
+}
+.td{
+  color: white;
+}
+.add-teacher-div input{
+  margin: 10px;
+  padding: 5px;
+  border-radius: 25px;
+  border: rgb(11, 126, 165) solid;
+  width: 90%;
+  color: black;
+}
+#app button{
+  margin: 10px;
+  padding: 5px;
+  border-radius: 25px;
+  border: rgb(11, 126, 165) solid;
+  width: 90%;
+}
+#te ,#be{
+  margin: 8px;
+  padding: 5px;
+  border-radius: 25px;
+  border: rgb(11, 126, 165) solid;
+  width: 45%;
 }

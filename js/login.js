@@ -37,9 +37,13 @@ function login() {
 		if (user.name == username && user.password == password) {
 			localStorage.setItem('loggedin', user.type)
 			HideLogIn()
+			if (localStorage.getItem('loggedin')=='admin'){
+				window.location.href= './dashboard.html'
+			}else{
+				window.location.href= './user.html'
+			}
 			return 
 		}
-		
 	}
 }
 function HideLogIn() {
